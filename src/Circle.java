@@ -1,4 +1,4 @@
-public class Circle {
+public class Circle implements Shape {
 
   Point point; // composition
   double r;
@@ -11,6 +11,11 @@ public class Circle {
   // return Area of circle
   public double CalculateArea() {
     return Math.PI * r * r;
+  }
+
+  @Override
+  public double CalculatePerimeter() {
+    return 2 * Math.PI * r;
   }
 }
 
