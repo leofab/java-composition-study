@@ -12,4 +12,9 @@ public class Car extends Vehicle {
   public void StarCar(){
     System.out.println("Car Started");
   }
+
+  @Override
+  public int calculatePrice() {
+    return super.calculatePrice() +2000;
+  }
 }
